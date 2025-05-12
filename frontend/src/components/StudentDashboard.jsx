@@ -14,7 +14,7 @@ const StudentDashboard = () => {
         const token = localStorage.getItem("studentToken"); // or whatever you're storing it as
 
         const res = await axios.get(
-          "https://student-future-developer.onrender.com/api/student/homework",
+          "http://35.171.163.171:5001/api/student/homework",
           {
             headers: {
               Authorization: `Bearer ${token}`,

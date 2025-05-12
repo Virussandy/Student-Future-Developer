@@ -23,7 +23,7 @@ const StudentSignup = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "https://student-future-developer.onrender.com/api/student/signup",
+        "http://35.171.163.171:5001/api/student/signup",
         formData
       );
       if (res.data.success) {
